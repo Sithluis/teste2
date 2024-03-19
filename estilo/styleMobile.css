@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: black;
+        background-image: url(../imagens/fundoCalis2.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif; /* Adicionando uma fonte padrão */
+    }
+    
+    header {
+        padding: 15px;
+        text-align: center; /* Centralizando o texto */
+    }
+    
+    header a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block; /* Transformando os links em blocos para ocuparem a largura total */
+        margin-bottom: 10px; /* Adicionando espaçamento entre os links */
+    }
+    
+    header a:hover {
+        background-color: rgba(151, 150, 150, 0.753); /* Escurecendo a cor de fundo ao passar o mouse */
+        transition-duration: .4s;
+    }
+    
+    header > #login {
+        background-color: rgb(236, 234, 234);
+    }
+    
+    header > #login:hover {
+        background-color: rgb(167, 165, 165);
+        transition-duration: .4s;
+        border-radius: none;
+    }
+    
+    header > #home {
+        color: rgb(248, 144, 144);
+    }
+    
+    main {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    main h1 {
+        font-size: 1.8rem; /* Reduzindo o tamanho do título */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    main p {
+        font-size: 16px; /* Reduzindo o tamanho do texto */
+        line-height: 1.5; /* Aumentando o espaçamento entre as linhas */
+        text-align: justify;
+        padding: 0 10px; /* Adicionando um espaçamento nas laterais */
+    }
+    
+    main > #todos_exercicios {
+        margin: 10px auto; /* Centralizando o link */
+        width: calc(100% - 20px); /* Fazendo com que o link ocupe a largura total com um espaçamento de 10px em cada lado */
+        max-width: 300px; /* Limitando a largura máxima do link */
+    }
+
+}
